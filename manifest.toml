@@ -19,8 +19,8 @@ code = "https://github.com/openobserve/openobserve"
 [integration]
 yunohost = ">= 12.1.17"
 helpers_version = "2.1"
-architectures = "all"
-multi_instance = true
+architectures = ["amd64", "arm64"]
+multi_instance = false
 
 ldap = false
 sso = false
