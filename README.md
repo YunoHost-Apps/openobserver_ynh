@@ -4,8 +4,8 @@ It shall NOT be edited by hand.
 -->
 
 <h1>
-  <img src="https://raw.githubusercontent.com/YunoHost/apps/main/logos/openobserve.png" width="32px" alt="Logo of OpenOberve">
-  OpenOberve, packaged for YunoHost
+  <img src="https://raw.githubusercontent.com/YunoHost/apps/main/logos/openobserve.png" width="32px" alt="Logo of OpenObserve">
+  OpenObserve, packaged for YunoHost
 </h1>
 
 Alternative to Elasticsearch/Splunk/Datadog for logs, metrics, traces, RUM, and more
@@ -20,13 +20,13 @@ Alternative to Elasticsearch/Splunk/Datadog for logs, metrics, traces, RUM, and 
 
 
 ## Screenshots
-![Screenshot of OpenOberve](./doc/screenshots/screenshot.png)
+![Screenshot of OpenObserve](./doc/screenshots/screenshot.png)
 
 ## 📦 Developer info
 
 [![Automatic tests level](https://apps.yunohost.org/badge/cilevel/openobserve)](https://ci-apps.yunohost.org/ci/apps/openobserve/)
 
-🛠️ Upstream OpenOberve repository: <https://github.com/openobserve/openobserve>
+🛠️ Upstream OpenObserve repository: <https://github.com/openobserve/openobserve>
 
 Pull request are welcome and should target the [`testing` branch](https://github.com/YunoHost-Apps/openobserve_ynh/tree/testing).
 

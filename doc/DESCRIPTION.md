@@ -1,1 +1,1 @@
-This is a dummy description of this app features
+OpenObserve (O2 for short) is a cloud-native observability platform built specifically for logs, metrics, traces, analytics, frontend monitoring and more. Start with a single binary that scales to terabytes, or deploy in High Availability mode for petabyte-scale workloads.
