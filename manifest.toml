@@ -5,7 +5,7 @@ packaging_format = 2
 id = "openobserve"
 name = "OpenOberve"
 description.en = "Alternative to Elasticsearch/Splunk/Datadog for logs, metrics, traces, RUM, and more"
-description.fr = "Alternative à Elasticsearch/Splunk/Datadog pour les journaux, les métriques, les traces, le RUM, etc."
+description.fr = "Alternative à Elasticsearch/Splunk/Datadog pour les journaux, les métriques, les traces, le RUM"
 
 version = "0.40.0~ynh1"
 
@@ -19,15 +19,15 @@ code = "https://github.com/openobserve/openobserve"
 [integration]
 yunohost = ">= 12.1.17"
 helpers_version = "2.1"
-architectures = "all"
-multi_instance = true
+architectures = ["amd64", "arm64"]
+multi_instance = false
 
 ldap = false
 sso = false
 
 disk = "50M"
-ram.build = "50M"
-ram.runtime = "50M"
+ram.build = "1000M"
+ram.runtime = "1000M"
 
 [install]
     [install.domain]
@@ -55,8 +55,6 @@ ram.runtime = "50M"
     arm64.url = "https://downloads.openobserve.ai/releases/o2-enterprise/v0.40.0/openobserve-ee-v0.40.0-linux-arm64.tar.gz"
     arm64.sha256 = "01d188f53b6b7e022b4e7e816aa7fbc2e966ff6338485023dc6aefdb00f26af8"
     
-    # autoupdate.strategy = "latest_github_tag"
-
     [resources.system_user]
 
     [resources.install_dir]
