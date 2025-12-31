@@ -1,1 +1,1 @@
-Ceci est une fausse description des fonctionalités de l'app
+OpenObserve (O2 en abrégé) est une plateforme d'observabilité native du cloud spécialement conçue pour les journaux, les métriques, les traces, les analyses, la surveillance frontale et bien plus encore. Commencez avec un seul fichier binaire pouvant atteindre plusieurs téraoctets, ou déployez-le en mode haute disponibilité pour des charges de travail de l'ordre du pétaoctet.
