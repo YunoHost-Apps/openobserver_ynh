@@ -3,7 +3,7 @@
 packaging_format = 2
 
 id = "openobserve"
-name = "OpenOberve"
+name = "OpenObserve"
 description.en = "Alternative to Elasticsearch/Splunk/Datadog for logs, metrics, traces, RUM, and more"
 description.fr = "Alternative à Elasticsearch/Splunk/Datadog pour les journaux, les métriques, les traces, le RUM"
 
