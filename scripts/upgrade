@@ -4,10 +4,9 @@
 # IMPORT GENERIC HELPERS
 #=================================================
 
-source _common.sh
 source /usr/share/yunohost/helpers
 
-#email=$(ynh_user_get_info --username="$admin" --key="mail")
+email=$(ynh_user_get_info --username="$admin" --key="mail")
 
 #=================================================
 # STOP SYSTEMD SERVICE
@@ -20,8 +19,6 @@ ynh_systemctl --service="$app" --action="stop"
 # DOWNLOAD, CHECK AND UNPACK SOURCE
 #=================================================
 ynh_script_progression "Upgrading source files..."
-
-email=$(ynh_user_get_info --username="$admin" --key="mail")
 
 ynh_setup_source --dest_dir="$install_dir" --full_replace --keep=".env"
 
@@ -43,7 +40,7 @@ ynh_config_add_nginx
 
 ynh_config_add_systemd
 
-yunohost service add "$app" --description="A short description of the app" --log="/var/log/$app/$app.log"
+yunohost service add "$app" --description="Observability platform built specifically for logs" --log="/var/log/$app/$app.log"
 
 #=================================================
 # START SYSTEMD SERVICE
