@@ -4,10 +4,9 @@
 # IMPORT GENERIC HELPERS
 #=================================================
 
-source _common.sh
 source /usr/share/yunohost/helpers
 
-#email=$(ynh_user_get_info --username="$admin" --key="mail")
+email=$(ynh_user_get_info --username="$admin" --key="mail")
 
 #=================================================
 # STOP SYSTEMD SERVICE
@@ -20,8 +19,6 @@ ynh_systemctl --service="$app" --action="stop"
 # DOWNLOAD, CHECK AND UNPACK SOURCE
 #=================================================
 ynh_script_progression "Upgrading source files..."
-
-email=$(ynh_user_get_info --username="$admin" --key="mail")
 
 ynh_setup_source --dest_dir="$install_dir" --full_replace --keep=".env"
 
